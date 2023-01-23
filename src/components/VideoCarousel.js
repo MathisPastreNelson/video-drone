@@ -15,40 +15,31 @@ export default function VideoCarousel() {
                     //here you can also pass className, or any other button element attributes
                     style: {
                         alignSelf: 'center',
-                        background: 'black',
-                        border: 'none',
-                        borderRadius: '50%',
                         color: 'orange',
                         cursor: 'pointer',
                         fontSize: '20px',
-                        height: 30,
                         lineHeight: 1,
                         textAlign: 'center',
                     },
-                    children: <span>{`>`}</span>,
+                    children: <span className='switchArrow'>{`>`}</span>,
                 }}
                 backwardBtnProps={{
                     //here you can also pass className, or any other button element attributes
                     style: {
                         alignSelf: 'center',
-                        background: 'black',
-                        border: 'none',
-                        borderRadius: '50%',
                         color: 'orange',
                         cursor: 'pointer',
                         fontSize: '20px',
-                        height: 30,
                         lineHeight: 1,
                         textAlign: 'center',
-                        width: 30,
                     },
-                    children: <span>{`<`}</span>,
+                    children: <span className='switchArrow'>{`<`}</span>,
                 }}
                 responsiveProps={[
                     {
                         itemsToShow: 1,
-                        itemsToScroll: 2,
-                        minWidth: 768,
+                        itemsToScroll: 1,
+                        minWidth: "768",
                     },
                 ]}
                 speed={500}
@@ -56,6 +47,7 @@ export default function VideoCarousel() {
             >
 
                 <iframe
+                    width="800px"
                     height="600"
                     src={"https://www.youtube.com/embed/8Ww47V7O4J0"}
                     frameBorder="0"
@@ -64,6 +56,7 @@ export default function VideoCarousel() {
                     title="Embedded youtube"
                 />
                 <iframe
+                    width="800px"
                     height="600"
                     src={"https://www.youtube.com/embed/FL8gPkxZQX4&ab"}
                     frameBorder="0"
@@ -72,6 +65,7 @@ export default function VideoCarousel() {
                     title="Embedded youtube"
                 />
                 <iframe
+                    width="800px"
                     height="600"
                     src={"https://www.youtube.com/embed/59bdEkTLvBs"}
                     frameBorder="0"
