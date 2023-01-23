@@ -6,6 +6,10 @@ body {
   text-align: center;
 }
 
+.videoMov {
+  width: 100%;
+}
+
 header {
   background-color: orange;
 }
