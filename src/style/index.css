@@ -15,14 +15,37 @@ h6 {
   margin: 0;
 }
 
-.switchArrow {
-  font-size: 50px;
+button {
+  background-color: black;
+  margin: auto;
+}
+
+.video_Container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 700px;
+  background-color: rgba(240, 248, 255, 0.192);
+}
+
+.switchArrow {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
   width: 50px;
-  border: 2px solid white;
+  background-color: rgb(240, 24, 0);
+  border: 3px rgb(255, 255, 255) solid;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  transition: ease-in-out 200ms;
+}
+
+.switchArrow:hover {
+  transform: scale(1.2);
 }
 
 header {
@@ -36,4 +59,8 @@ header {
 
 footer {
   background-color: orange;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */

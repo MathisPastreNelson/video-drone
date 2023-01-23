@@ -1,11 +1,13 @@
 import React from 'react'
 import { useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
+import { View } from 'react';
+
 
 export default function VideoCarousel() {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
     return (
-        <div>
+        <div className='video_Container'>
             <ReactSimplyCarousel
                 activeSlideIndex={activeSlideIndex}
                 onRequestChange={setActiveSlideIndex}
@@ -15,11 +17,11 @@ export default function VideoCarousel() {
                     //here you can also pass className, or any other button element attributes
                     style: {
                         alignSelf: 'center',
-                        color: 'orange',
                         cursor: 'pointer',
                         fontSize: '20px',
                         lineHeight: 1,
                         textAlign: 'center',
+                        padding: "0"
                     },
                     children: <span className='switchArrow'>{`>`}</span>,
                 }}
@@ -27,11 +29,12 @@ export default function VideoCarousel() {
                     //here you can also pass className, or any other button element attributes
                     style: {
                         alignSelf: 'center',
-                        color: 'orange',
                         cursor: 'pointer',
                         fontSize: '20px',
                         lineHeight: 1,
                         textAlign: 'center',
+                        padding: "0",
+
                     },
                     children: <span className='switchArrow'>{`<`}</span>,
                 }}
