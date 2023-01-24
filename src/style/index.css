@@ -1,6 +1,6 @@
 body {
   margin: auto;
-  width: 1100px;
+  max-width: 1100px;
   background-color: black;
   color: white;
   text-align: center;
@@ -53,7 +53,13 @@ button {
   justify-content: center;
   align-items: center;
   height: 70vh;
+  margin: 5vh auto;
   background-color: rgba(20, 20, 20, 0.11);
+  border-radius: 20px;
+}
+
+.videoSize {
+  width: 800px;
 }
 
 .switchArrow {
@@ -76,6 +82,14 @@ button {
   transform: scale(1.2);
 }
 
+@media only screen and (max-width: 962px) {
+  .videoSize {
+    width: 280px;
+  }
+  .switchArrow {
+    width: 25px;
+  }
+}
 header {
   background-color: orange;
   height: 15vh;
@@ -83,12 +97,35 @@ header {
   justify-content: center;
   align-items: center;
   border: "2px solid white";
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #ee7752, #e73c7e);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  height: 10vh;
+  border-radius: 20px;
 }
 
 footer {
-  background-color: orange;
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #ee7752, #e73c7e);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  height: 10vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }/*# sourceMappingURL=index.css.map */

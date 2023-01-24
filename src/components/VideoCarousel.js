@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
-import { View } from 'react';
 
 
 export default function VideoCarousel() {
@@ -50,22 +49,23 @@ export default function VideoCarousel() {
             >
 
                 <iframe
-                    width="800px"
-                    height="500px"
+
+                    height="450px"
                     src={"https://www.youtube.com/embed/8Ww47V7O4J0"}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     title="Embedded youtube"
+                    className='videoSize'
                 />
                 <iframe
-                    width="800px"
-                    height="500px"
+                    height="450px"
                     src={"https://www.youtube.com/embed/59bdEkTLvBs"}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     title="Embedded youtube"
+                    className='videoSize'
                 />
             </ReactSimplyCarousel>
         </div>
