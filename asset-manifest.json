@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "//mathispastrenelson.github.io/video-drone/static/css/main.17f9ed76.css",
-    "main.js": "//mathispastrenelson.github.io/video-drone/static/js/main.7589a6a6.js",
-    "static/js/787.3e3f892a.chunk.js": "//mathispastrenelson.github.io/video-drone/static/js/787.3e3f892a.chunk.js",
-    "index.html": "//mathispastrenelson.github.io/video-drone/index.html",
-    "main.17f9ed76.css.map": "//mathispastrenelson.github.io/video-drone/static/css/main.17f9ed76.css.map",
-    "main.7589a6a6.js.map": "//mathispastrenelson.github.io/video-drone/static/js/main.7589a6a6.js.map",
-    "787.3e3f892a.chunk.js.map": "//mathispastrenelson.github.io/video-drone/static/js/787.3e3f892a.chunk.js.map"
+    "main.css": "/video-drone/static/css/main.366862f2.css",
+    "main.js": "/video-drone/static/js/main.e21d8cf8.js",
+    "static/js/787.3e3f892a.chunk.js": "/video-drone/static/js/787.3e3f892a.chunk.js",
+    "index.html": "/video-drone/index.html",
+    "main.366862f2.css.map": "/video-drone/static/css/main.366862f2.css.map",
+    "main.e21d8cf8.js.map": "/video-drone/static/js/main.e21d8cf8.js.map",
+    "787.3e3f892a.chunk.js.map": "/video-drone/static/js/787.3e3f892a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17f9ed76.css",
-    "static/js/main.7589a6a6.js"
+    "static/css/main.366862f2.css",
+    "static/js/main.e21d8cf8.js"
   ]
 }
