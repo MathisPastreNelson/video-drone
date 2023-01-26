@@ -7,67 +7,73 @@ export default function VideoCarousel() {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
     return (
         <div className='video_Container'>
-            <ReactSimplyCarousel
-                activeSlideIndex={activeSlideIndex}
-                onRequestChange={setActiveSlideIndex}
-                itemsToShow={1}
-                itemsToScroll={1}
-                forwardBtnProps={{
-                    //here you can also pass className, or any other button element attributes
-                    style: {
-                        alignSelf: 'center',
-                        cursor: 'pointer',
-                        fontSize: '20px',
-                        lineHeight: 1,
-                        textAlign: 'center',
-                        padding: "0"
-                    },
-                    children: <span className='switchArrow'>{`>`}</span>,
-                }}
-                backwardBtnProps={{
-                    //here you can also pass className, or any other button element attributes
-                    style: {
-                        alignSelf: 'center',
-                        cursor: 'pointer',
-                        fontSize: '20px',
-                        lineHeight: 1,
-                        textAlign: 'center',
-                        padding: "0",
+            <div>
+                <p>Vidéo n° {activeSlideIndex + 1}/2</p>
+            </div>
+            <div>
 
-                    },
-                    children: <span className='switchArrow'>{`<`}</span>,
-                }}
-                responsiveProps={[
-                    {
-                        itemsToShow: 1,
-                        itemsToScroll: 1,
-                        minWidth: "768",
-                    },
-                ]}
-                speed={500}
-                easing="linear"
-            >
+                <ReactSimplyCarousel
+                    activeSlideIndex={activeSlideIndex}
+                    onRequestChange={setActiveSlideIndex}
+                    itemsToShow={1}
+                    itemsToScroll={1}
+                    forwardBtnProps={{
+                        //here you can also pass className, or any other button element attributes
+                        style: {
+                            alignSelf: 'center',
+                            cursor: 'pointer',
+                            fontSize: '20px',
+                            lineHeight: 1,
+                            textAlign: 'center',
+                            padding: "0"
+                        },
+                        children: <span className='switchArrow'>{`>`}</span>,
+                    }}
+                    backwardBtnProps={{
+                        //here you can also pass className, or any other button element attributes
+                        style: {
+                            alignSelf: 'center',
+                            cursor: 'pointer',
+                            fontSize: '20px',
+                            lineHeight: 1,
+                            textAlign: 'center',
+                            padding: "0",
 
-                <iframe
+                        },
+                        children: <span className='switchArrow'>{`<`}</span>,
+                    }}
+                    responsiveProps={[
+                        {
+                            itemsToShow: 1,
+                            itemsToScroll: 1,
+                            minWidth: "768",
+                        },
+                    ]}
+                    speed={500}
+                    easing="linear"
+                >
 
-                    height="450px"
-                    src={"https://www.youtube.com/embed/8Ww47V7O4J0"}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title="Embedded youtube"
-                    className='videoSize'
-                />
-                <iframe
-                    height="450px"
-                    src={"https://www.youtube.com/embed/59bdEkTLvBs"}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title="Embedded youtube"
-                    className='videoSize'
-                />
-            </ReactSimplyCarousel>
-        </div>
+                    <iframe
+
+                        height="450px"
+                        src={"https://www.youtube.com/embed/8Ww47V7O4J0"}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title="Embedded youtube"
+                        className='videoSize'
+                    />
+                    <iframe
+                        height="450px"
+                        src={"https://www.youtube.com/embed/59bdEkTLvBs"}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title="Embedded youtube"
+                        className='videoSize'
+                    />
+                </ReactSimplyCarousel>
+            </div>
+        </div >
     )
 }
