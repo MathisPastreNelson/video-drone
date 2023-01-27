@@ -54,7 +54,6 @@ export default function VideoCarousel() {
                 >
 
                     <iframe
-
                         height="450px"
                         src={"https://www.youtube.com/embed/8Ww47V7O4J0"}
                         frameBorder="0"
