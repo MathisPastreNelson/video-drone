@@ -55,7 +55,7 @@ export default function VideoCarousel() {
 
                     <iframe
                         height="450px"
-                        src={"https://www.youtube.com/embed/8Ww47V7O4J0"}
+                        src={"https://www.youtube.com/embed/TmdLe_72Q0c"}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
@@ -64,7 +64,7 @@ export default function VideoCarousel() {
                     />
                     <iframe
                         height="450px"
-                        src={"https://www.youtube.com/embed/59bdEkTLvBs"}
+                        src={"https://www.youtube.com/embed/2FHnTn3fMaw"}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
